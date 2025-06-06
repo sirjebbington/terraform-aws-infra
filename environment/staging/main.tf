@@ -5,7 +5,6 @@ provider "aws" {
 data "aws_secretsmanager_secret_version" "db_password" {
   secret_id = "/myapp/${var.environment}/db_password"
 }
-
 module "network" {
   source              = "../../modules/network"
   vpc_cidr            = var.vpc_cidr
@@ -45,6 +44,3 @@ module "database" {
   security_group_id = module.security.db_sg_id
   environment       = var.environment
 }
-
-
-
