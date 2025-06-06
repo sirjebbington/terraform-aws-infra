@@ -11,5 +11,5 @@ variable "key_pair" {}
 variable "db_engine" {}
 variable "db_instance_class" {}
 variable "storage_size" {}
-variable "db_name" {}
+# variable "db_name" {}
 variable "db_user" {}

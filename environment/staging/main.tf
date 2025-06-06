@@ -38,7 +38,7 @@ module "database" {
   db_engine         = var.db_engine
   db_instance_class = var.db_instance_class
   storage_size      = var.storage_size
-  db_name           = var.db_name
+  # db_name           = var.db_name
   db_user           = var.db_user
   db_password       = data.aws_secretsmanager_secret_version.db_password.secret_string
   private_subnet_id = module.network.private_subnet_id

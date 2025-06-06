@@ -15,5 +15,5 @@ key_pair      = "sshkey_uat"
 db_engine         = "postgres"
 db_instance_class = "db.t3.micro"
 storage_size      = 20
-db_name           = "stagingdb"
+# db_name           = "stagingdb"
 db_user           = "admin"
