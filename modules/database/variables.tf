@@ -1,0 +1,9 @@
+variable "db_engine" {}
+variable "db_instance_class" {}
+variable "storage_size" {}
+variable "db_name" {}
+variable "db_user" {}
+variable "db_password" {}
+variable "private_subnet_id" {}
+variable "security_group_id" {}
+variable "environment" {}

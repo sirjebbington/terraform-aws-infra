@@ -1,0 +1,15 @@
+variable "environment" {}
+variable "vpc_cidr" {}
+variable "public_subnet_cidr" {}
+variable "private_subnet_cidr" {}
+variable "availability_zone" {}
+variable "allowed_ssh_cidr" {}
+variable "db_port" {}
+variable "ami" {}
+variable "instance_type" {}
+variable "key_pair" {}
+variable "db_engine" {}
+variable "db_instance_class" {}
+variable "storage_size" {}
+variable "db_name" {}
+variable "db_user" {}
