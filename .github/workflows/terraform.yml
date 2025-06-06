@@ -11,8 +11,6 @@ on:
       - main
     paths:
       - 'environment/staging/**'
-
-  push:
     tags:
       - 'v*.*.*'
 
