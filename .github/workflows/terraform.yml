@@ -3,7 +3,7 @@ name: Terraform CI
 on:
   pull_request:
     paths:
-      - 'envs/**.tf'
+      - 'environment/**.tf'
       - 'modules/**.tf'
 
 jobs:
@@ -26,20 +26,20 @@ jobs:
 
       - name: Initialize Terraform
         run: |
-          cd envs/staging
+          cd environment/staging
           terraform init -backend=false
 
       - name: Check Formatting
         run: |
-          cd envs/staging
+          cd environment/staging
           terraform fmt -check
 
       - name: Validate Terraform
         run: |
-          cd envs/staging
+          cd environment/staging
           terraform validate
 
       - name: Terraform Plan (no backend)
         run: |
-          cd envs/staging
+          cd environment/staging
           terraform plan -input=false -var-file="terraform.tfvars"
